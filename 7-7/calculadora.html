@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <p>Tem que clicar no número e depois na operação que tu deseja realizar, sempre após cada número dessa operação.</p> <br>
+    <p>por exemplo, se queres fazer 10+10 tens que clicar no operador duas vezes. isso é um dos problemas que eu to pensando em como resolver. </p>
+    <input type="number" name="num" id="num">
+
+    <div>
+        <br>
+        <input type="button" value="1" onclick="digito(1)">
+        <input type="button" value="2" onclick="digito(2)">
+        <input type="button" value="3" onclick="digito(3)"> <br>
+        <input type="button" value="4" onclick="digito(4)">
+        <input type="button" value="5" onclick="digito(5)">
+        <input type="button" value="6" onclick="digito(6)"> <br>
+        <input type="button" value="7" onclick="digito(7)">
+        <input type="button" value="8" onclick="digito(8)">
+        <input type="button" value="9" onclick="digito(9)">
+        <input type="button" value="0" onclick="digito(0)">
+    </div>
+    <div>
+        <input type="button" value="+" onclick="soma()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="/" onclick="div()">
+        <input type="button" value="*" onclick="mult()">
+    </div>
+
+
+    <br>
+    <input type="button" value="Resultado" onclick="resultado()">
+    <p id="resultado"></p>
+    <hr>
+    <p id="total"></p>
+    <input type="button" value="resetar" onclick="reset()">
+    <script src="script.js"></script>
+</body>
+</html>
